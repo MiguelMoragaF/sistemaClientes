@@ -10,7 +10,6 @@ public class Cliente {
 	// Genera constructor con párametros
 	public Cliente(String runCliente, String nombreCliente, String apellidoCliente, String aniosCliente,
 			CategoriaEnum nombreCategoria) {
-		super();
 		this.runCliente = runCliente;
 		this.nombreCliente = nombreCliente;
 		this.apellidoCliente = apellidoCliente;

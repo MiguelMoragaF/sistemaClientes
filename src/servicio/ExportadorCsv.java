@@ -22,8 +22,8 @@ public class ExportadorCsv extends Exportador {
 		if (listaClientes == null) {
 			System.out.println("Lista ahun esta vacia");
 		} else {
-			System.out.println("---------Exportar Datos en Windows---------------\n" 
-								+ "Ingresa la ruta en donde desea exportar el archivo clientes.csv: ");
+			System.out.println("---------Exportar Datos en Windows---------------\n" + 
+								"Ingresa la ruta en donde desea exportar el archivo clientes.csv: ");
 			String ruta = scanner.nextLine();
 			String archivo = ruta + "/" + fileName1;
 			File fl = new File(archivo);

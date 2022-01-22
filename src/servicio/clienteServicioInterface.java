@@ -3,6 +3,7 @@ package servicio;
 import modelo.CategoriaEnum;
 import modelo.Cliente;
 
+// Declaración de intereses
 public interface clienteServicioInterface {
 	
 	void listarClientes(); 

@@ -23,8 +23,8 @@ public class ExportadorTxt extends Exportador {
 			if (listaClientes == null) {
 				System.out.println("Lista ahun esta vacia");
 			} else {
-				System.out.println("---------Exportar Datos en Windows---------------\n"
-									+ "Ingresa la ruta en donde desea exportar el archivo clientes.txt: ");
+				System.out.println("---------Exportar Datos en Windows---------------\n" + 
+									"Ingresa la ruta en donde desea exportar el archivo clientes.txt: ");
 				String ruta = scanner.nextLine();
 				String archivo = ruta + "/" + fileName;
 				File fl = new File(archivo);

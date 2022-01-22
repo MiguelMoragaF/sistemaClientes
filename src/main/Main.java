@@ -1,6 +1,6 @@
 // Por Miguel Moraga
 // Fecha: 11/01/2022
-// Versión: 1.2
+// Versión: 1.3
 
 /*Descripción:  la pastelería “Bon Bon Jovi” pide crear un software, 
  * donde pueda tener un control de sus clientes, 

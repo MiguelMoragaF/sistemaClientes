@@ -53,8 +53,6 @@ public class ArchivoServicio extends Exportador {
 		return listaClientes;
 	}
 
-
-
 	// Crea metodo exportar
 	@Override
 	public void exportar(String fileName, List<Cliente> listaClientes) {
@@ -64,8 +62,8 @@ public class ArchivoServicio extends Exportador {
 		if (listaClientes == null) {
 			System.out.println("Lista ahun está vacía");
 		} else {
-			System.out.println("Exportar Datos\n"
-								+ "Ingresar ruta donde se exportara archivo clientes.txt: ");
+			System.out.println("Exportar Datos\n" + 
+								"Ingresar ruta donde se exportara archivo clientes.txt: ");
 			String ruta = scanner.nextLine();
 			String archivo = ruta + "/" + fileName;
 			File fl = new File(archivo);

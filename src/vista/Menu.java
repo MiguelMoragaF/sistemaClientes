@@ -39,7 +39,7 @@ public class Menu {
 							"3. Editar Cliente\n" + 
 							"4. Cargar Datos\n" + 
 							"5. Exportar Datos\n" + 
-							"6. Salir");
+							"6. Salir"); 
 		System.out.println("Ingrese una opción: \n");
 		// Recibe entrada de teclado a través scanner
 		String selecion = scanner.nextLine();
@@ -121,12 +121,13 @@ public class Menu {
 
 	// Permite la edición de algún cliente
 	private void actualizarDatosCliente(Cliente cliente) {
-		System.out.println("----Actualizando datos del Cliente-----\n" + "\n" + "1.-El RUN del Cliente es: "
-				+ cliente.getRunCliente() + "\n" + "2.-El Nombre del Cliente es: " + cliente.getNombreCliente() + "\n"
-				+ "3.-El Apellido del Cliente es: " + cliente.getApellidoCliente() + "\n"
-				+ "4.-Los años como Cliente son: " + cliente.getAniosCliente() + " años\n" + "\n"
-				+ "Ingrese opcion a editar de los datos del cliente: " + "\n"
-				+ "----------------------------------------");
+		System.out.println("----Actualizando datos del Cliente-----\n" + "\n" + 
+							"1.-El RUN del Cliente es: " + cliente.getRunCliente() + "\n" + 
+							"2.-El Nombre del Cliente es: " + cliente.getNombreCliente() + "\n" + 
+							"3.-El Apellido del Cliente es: " + cliente.getApellidoCliente() + "\n"	+ 
+							"4.-Los años como Cliente son: " + cliente.getAniosCliente() + " años\n" + "\n"	+ 
+							"Ingrese opcion a editar de los datos del cliente: " + "\n" + 
+							"----------------------------------------");
 		int opCliente = scanner.nextInt();
 		scanner.nextLine();
 		switch (opCliente) {
@@ -166,12 +167,12 @@ public class Menu {
 
 	// Para cambiar el estado del cliente.
 	private void actualizarEstadoCliente(Cliente cliente) {
-		System.out.println("-----Actualizando estado del Cliente----\n" 
-							+ "El estado actual es: " + cliente.getNombreCategoria() + "\n" 
-							+ "1.-Si desea cambiar el estado del Cliente a Inactivo\n"
-							+ "2.-Si desea mantener el estado del cliente Activo\n" + "\n" 
-							+ "Ingrese opcion: " + "\n"
-							+ "----------------------------------------");
+		System.out.println("-----Actualizando estado del Cliente----\n" + 
+							"El estado actual es: " + cliente.getNombreCategoria() + "\n" + 
+							"1.-Si desea cambiar el estado del Cliente a Inactivo\n" + 
+							"2.-Si desea mantener el estado del cliente Activo\n" + "\n" + 
+							"Ingrese opcion: " + "\n" + 
+							"----------------------------------------");
 		int opCliente = scanner.nextInt();
 		scanner.nextLine();
 		switch (opCliente) {
@@ -195,14 +196,6 @@ public class Menu {
 
 	// cargarDatos, ejecuta la carga de datos del archivo “DBClientes.csv”
 	private void cargarDatos() {
-		/*System.out.println("---------Cargar Datos en Windows---------------\n" + "\n" + 
-							"Ingresa la ruta en donde se encuentra el archivo DBClientes.csv: \n");
-		String ruta = scanner.nextLine(); 
-		Map<String, Cliente> clientes = archivoServicio.cargarDatos(ruta); 
-		clienteServicio.setListaClientes(clientes);
-		System.out.println("-----------------------------------------------\n" 
-				+ "Datos cargados correctamente en la lista");
-		Utilidad.stopAndContinue();*/
 		System.out.println("---------Cargar Datos en Windows---------------\n" + "\n"
 							+ "Ingresa la ruta en donde se encuentra el archivo DBClientes.csv: \n");
 		List<Cliente> listaClientes = archivoServicio.cargarDatos(fileName1);
@@ -216,11 +209,12 @@ public class Menu {
 
 	// exportarDatos, llama método para exportar clientes en formato “.txt” o “.csv”.
 	private void exportarDatos() {
-		System.out.println("---------Exportar Datos-----------\n" 
-							+ "Seleccione el formato a exportar: \n"
-							+ "1.-Formato csv\n" + "2.-Formato txt\n" 
-							+ "\n" + "Ingrese una opción para exportar: \n"
-							+ "----------------------------------");
+		System.out.println("---------Exportar Datos-----------\n" + 
+							"Seleccione el formato a exportar: \n" + 
+							"1.-Formato csv\n" + 
+							"2.-Formato txt\n" + "\n" + 
+							"Ingrese una opción para exportar: \n" + 
+							"----------------------------------");
 		List<Cliente> listaClientes = clienteServicio.getListaClientes();
 		int op = scanner.nextInt();
 		switch (op) {

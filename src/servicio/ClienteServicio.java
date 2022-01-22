@@ -51,7 +51,7 @@ public class ClienteServicio implements clienteServicioInterface {
 		// Agrega nuevo cliente a listaClientes
 		if (listaClientes != null) {
 			listaClientes.add(cliente);
-			// Uso de iteración de la libreria Stream (Strean + forEach)
+			// Uso de iteración de la libreria Stream (stream + forEach)
 			listaClientes.stream().forEach(System.out::println);
 			System.out.println("a sido agragado");
 		} else {
