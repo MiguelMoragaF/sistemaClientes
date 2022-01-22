@@ -24,7 +24,7 @@ public class ArchivoServicio extends Exportador {
 		// Implementaciones correspondientes
 		List<Cliente> listaClientes = new ArrayList<Cliente>(); 
 		String ruta = scanner.nextLine();
-		String archivo = ruta + File.separator + fileName1;
+		String archivo = ruta + File.separator + fileName1; 
 
 		// Uso de FileReader y BufferedReader (para lectura de archivos)
 		FileReader fr = null;
